@@ -8,7 +8,7 @@ const BASE_URL = import.meta.env.MODE === "development" ? "http://localhost:5001
 export const useAuthStore = create((set, get) => ({
   authUser: null, // if the user is authenticated, we will store the user object here.
   isSigningUp: false,
-  isLoggingIng: false,
+  isLoggingIn: false,
   isUpdatingProfile: false,
   isCheckingAuth: true,  // we will use this to show a loading spinner while we are checking if the user is authenticated. (loading state)
   onlineUsers: [], // we will store the online users here.
